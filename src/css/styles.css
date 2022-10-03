@@ -17,4 +17,50 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.country-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.country-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-flag {
+  width: 45px;
+  height: 30px;
+}
+
+.country-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.flag {
+  width: 100px;
+  height: 75px;
+}
+
+div > span {
+  font-weight: 400;
 }
