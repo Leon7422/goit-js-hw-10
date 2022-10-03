@@ -21,6 +21,11 @@ body {
   margin-top: 10px;
 }
 
+.text {
+  display: flex;
+  margin-left: 20px;
+}
+
 .country-list {
   display: flex;
   flex-direction: column;
