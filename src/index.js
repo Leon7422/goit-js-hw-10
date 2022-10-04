@@ -1,7 +1,6 @@
 import Notiflix from 'notiflix';
 import 'notiflix/dist/notiflix-3.2.5.min.css';
 import debounce from 'lodash.debounce';
-const debounce = require('lodash.debounce');
 import './css/styles.css';
 import fetchCountries from './fetchCountries';
 
@@ -18,7 +17,9 @@ function extraxtCountryName(e) {
 
   fetchCountries(searchArea.trim())
     .then(data => createAllMarkups(data))
-    .catch(err => console.log(err));
+    .catch(e => {
+      Notiflix.Notify.failure('Oops, there is no country with that name');
+    });
 }
 
 function createAllMarkups(data) {
